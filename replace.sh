@@ -28,8 +28,6 @@ replace(){
 
 	#old_val='"192.168.23.225:3801", "192.168.23.59:3801"'
 	#new_val='"192.168.23.59:3801"'
-	new_val='registry.admicro.vn/backend-logging'
-	old_val='ir.admicro.vn/logging'
 	#array directories = find('devops', 'rt');
 	#foreach (string directory in directories)
 	#{}
@@ -45,7 +43,6 @@ replace(){
 			#sed -i 's#"192.168.23.225:3801", "192.168.23.59:3801"#"192.168.23.59:3801"#g' "${pp}"
 			#sed -i 's#"192.168.23.59:3801"#"192.168.23.225:3801", "192.168.23.59:3801"#g' "${pp}"
 			#sed -i 's#"192.168.23.225:3801", "192.168.23.59:3801"#"192.168.23.225:3801"#g' "${pp}"
-			#sed -i 's#ir.admicro.vn#registry.admicro.vn#g' "${pp}"
 		done
 	done
 	return 1
