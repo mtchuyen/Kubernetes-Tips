@@ -27,12 +27,12 @@ Có 2 trạng thái:
 ### Lables
 
 ***created a label for a node:***
-> kubectl label node <nodename> <labelname>=<value>
+> kubectl label node `<nodename>` `<labelname>=<value>`
   
 ***delete above labels from its node:***
-> kubectl label node <nodename> <labelname>-
+> kubectl label node `<nodename>` `<labelname>-`
 
-Note: ***<labelname>-*** (with `-` sign) and without `<value>`
+Note: ***`<labelname>-`*** (with `-` sign) and without `<value>`
 
 ***Check labels in node***
 > kubectl get nodes --show-labels
