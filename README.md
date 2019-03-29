@@ -46,6 +46,10 @@ NAME             STATUS    AGE       VERSION
 And get only IP:
 > kubectl get nodes -l 'rb=yes,rbslave=yes' | grep -v "NAME" | cut -f1 -d' '
 
+OR by full command:
+> kubectl get nodes -l 'rb=yes,rbslave=yes' -o jsonpath='{range .items[*]}{.metadata.name} {.status.addresses[?(@.type=="ExternalIP")].address}{"\n"}{end}'
+
+
 ## Referrer:
 - [Series về khái niệm K8s](http://blog.therightway.cloud/khai-niem-va-cac-thanh-phan-co-ban-trong-kubernetes-cluster/)
 - https://techblog.vn/phan-2-kien-truc-cua-kubernetes
