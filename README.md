@@ -53,3 +53,4 @@ OR by full command:
 ## Referrer:
 - [Series về khái niệm K8s](http://blog.therightway.cloud/khai-niem-va-cac-thanh-phan-co-ban-trong-kubernetes-cluster/)
 - https://techblog.vn/phan-2-kien-truc-cua-kubernetes
+- Kubectl command tips: https://coreos.com/blog/kubectl-unix-pipes
